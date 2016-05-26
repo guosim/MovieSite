@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+# create three Movie class instances
 toy_story = media.Movie("Toy Story",
 			"https://upload.wikimedia.org/wikipedia/en/6/6c/Toy_Story_3_Cover_Art.jpg",
 			"https://www.youtube.com/watch?v=KYz2wyBy3kc")
@@ -13,10 +14,11 @@ the_lion_king = media.Movie("The Lion King",
 			"https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
 			"https://www.youtube.com/watch?v=4sj1MT05lAA")
 						
-#make an empty list, append movies to it
+# make an empty list, append movies to it
 movies = []
 movies.append(toy_story)
 movies.append(pulp_fiction)
 movies.append(the_lion_king)
 
+# use external function to generates HTML page with movies 
 fresh_tomatoes.open_movies_page(movies)
